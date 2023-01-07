@@ -2,23 +2,13 @@ import React, { Component } from 'react'
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import {
-    BrowserRouter as Router,
-    Routes,
-    Route,
-    Link
-} from "react-router-dom";
-import Bollywood from './Bollywood';
-import Technology from './Technology';
-import Hollywood from './Hollywood';
-import Fitness from './Fitness';
-import Food from './Food';
-import Home from './Home';
+import { Link } from 'react-router-dom';
+import MainHeader from './MainHeader';
 export default class NavbarComp extends Component {
     render() {
         return (
-            <Router>
                 <div>
+                    <MainHeader />
                     <Navbar expand="lg" className='container container1'>
                         <Container>
                             {/* <Navbar.Brand href="#home">The Siren</Navbar.Brand> */}
@@ -42,17 +32,7 @@ export default class NavbarComp extends Component {
                     </Navbar>
 
                 </div>
-                <div>
-                    <Routes>
-                        <Route path="/" element={<Home />}></Route>
-                        <Route path="/bollywood" element={<Bollywood />}></Route>
-                        <Route path="/technology" element={<Technology />}></Route>
-                        <Route path="/hollywood" element={<Hollywood />}></Route>
-                        <Route path="/fitness" element={<Fitness />}></Route>
-                        <Route path="/food" element={<Food />}></Route>
-                    </Routes>
-                </div>
-            </Router>
+           
         )
     }
 }

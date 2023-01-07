@@ -6,10 +6,12 @@
 //   )
 // }
 import React from 'react'
+import NavbarComp from './NavbarComp'
 
 export default function Food() {
   return (
     <>
+    <NavbarComp />
       <div className="container bollywoodcontainer">
         <div className="row">
           <div className="col-md-8">

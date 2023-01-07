@@ -6,5 +6,6 @@ export default function MainHeader() {
             <span className='header'>The</span>
             <span className='h1 siren'>Siren</span>
         </div>
+        
     )
 }

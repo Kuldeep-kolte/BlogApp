@@ -1,9 +1,11 @@
 import React from 'react'
+import NavbarComp from './NavbarComp';
 
 const Technology = () =>{
   // const data = props.data;
   return (
     <>
+    <NavbarComp />
       <div className="container bollywoodcontainer">
         <div className="row">
           <div className="col-md-8">

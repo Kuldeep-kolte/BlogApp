@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
-
+import { Link } from 'react-router-dom';
+import NavbarComp from './NavbarComp';
 class Home extends Component {
     render() {
         return (
             <>
-            {/* Container 1 */}
+                
+                <NavbarComp />
+                {/* Container 1 */}
                 <div className="container">
                     <div className="row row1">
                         <div className="col-md-7 main1 card card1">
@@ -28,17 +31,21 @@ class Home extends Component {
                 {/* Container 2 */}
                 <div className="container">
                     <div className="row row2">
-                        <h1 style={{ marginBottom:'3%' }}><span style={{ borderBottom: '2px solid red' }}>The</span> Latest</h1>
+                        <h1 style={{ marginBottom: '3%' }}><span style={{ borderBottom: '2px solid red' }}>The</span> Latest</h1>
+
                         <div className="col-md-4 card4">
-                            <div className="card">
-                                <img className="card-img-top" src="https://media.istockphoto.com/id/1354441996/photo/image-of-open-antique-book-on-wooden-table-with-glitter-overlay.jpg?b=1&s=170667a&w=0&k=20&c=O_VZbgONe4WTXPOEvwKYezhqFkzAXpr2g-lCdpdj5FU=" alt="Card image cap" />
-                                <div className="card-body">
-                                    <h4>Joshua Tree Overnight Adventure</h4>
-                                    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
+                            <Link to="/NextPage">
+                                <div className="card">
+                                    <img className="card-img-top" src="https://media.istockphoto.com/id/1354441996/photo/image-of-open-antique-book-on-wooden-table-with-glitter-overlay.jpg?b=1&s=170667a&w=0&k=20&c=O_VZbgONe4WTXPOEvwKYezhqFkzAXpr2g-lCdpdj5FU=" alt="Card image cap" />
+                                    <div className="card-body">
+                                        <h4 >Joshua Tree Overnight Adventure</h4>
+                                        <p className="card-text" style={{ textDecoration: 'none' }}>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
+                                    </div>
                                 </div>
-                            </div>
+                            </Link>
                         </div>
+
                         <div className="col-md-4 card4">
                             <div className="card">
                                 <img className="card-img-top" src="https://media.istockphoto.com/id/1354441996/photo/image-of-open-antique-book-on-wooden-table-with-glitter-overlay.jpg?b=1&s=170667a&w=0&k=20&c=O_VZbgONe4WTXPOEvwKYezhqFkzAXpr2g-lCdpdj5FU=" alt="Card image cap" />
@@ -65,7 +72,7 @@ class Home extends Component {
                 {/* Container 3 */}
                 <div className="container">
                     <div className="row">
-                        <h1 style={{ marginBottom:'3%' }}><span style={{ borderBottom: '2px solid red' }}>Latest</span> Articles</h1>
+                        <h1 style={{ marginBottom: '3%' }}><span style={{ borderBottom: '2px solid red' }}>Latest</span> Articles</h1>
                         <div class="col-md-8">
                             <div class=" mb-3">
                                 <div class="row no-gutters">

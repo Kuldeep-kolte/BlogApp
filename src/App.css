@@ -1,11 +1,11 @@
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
- 
 }
 body{
-  background-color: rgb(160, 204, 248);
+  background-color: rgb(103, 150, 198);
 }
 
 /* The Siren Heading CSS Start  */
@@ -124,7 +124,12 @@ body{
   }
   .card4{
     margin-bottom: 20px;
+    color: #000;
   }
+}
+.card{
+  color: #000;
+  text-decoration: none;
 }
 
 /*css for 3,4,5  */
@@ -182,4 +187,20 @@ body{
 .ab1{
   display: none;
 }
+}
+.c1{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+hr{
+  height:4px;border-width:0;color:gray;background-color:rgb(2, 2, 2)
+}
+
+.nextimg{
+  width: 4rem;
+  margin-top: 20px;
+}
+.art{
+  font-weight: bolder;
 }
