@@ -7,13 +7,13 @@ import {
   Route,
 
 } from "react-router-dom";
-import Bollywood from './components/Bollywood';
-import Technology from './components/Technology';
-import Hollywood from './components/Hollywood';
-import Fitness from './components/Fitness';
-import Food from './components/Food';
-import Home from './components/Home';
-import NextPage from './components/NextPage';
+import Bollywood from './Pages/Bollywood';
+import Technology from './Pages/Technology';
+import Hollywood from './Pages/Hollywood';
+import Fitness from './Pages/Fitness';
+import Food from './Pages/Food';
+import Home from './Pages/Home';
+import NextPage from './Pages/NextPage';
 function App() {
   return (
     <div className="App">
